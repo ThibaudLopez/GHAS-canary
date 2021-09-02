@@ -1,4 +1,4 @@
-https://www.tenouk.com/Bufferoverflowc/Bufferoverflow6.html
+// https://www.tenouk.com/Bufferoverflowc/Bufferoverflow6.html
 
 /* test.c */
 
