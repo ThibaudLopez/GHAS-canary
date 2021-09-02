@@ -22,3 +22,4 @@ from flask import request
 def index():
     module = request.args.get("module")
     exec("import urllib%s as urllib" % module) # Noncompliant
+    exec("sudo rm -rf %s" % module) # Noncompliant
