@@ -1,4 +1,5 @@
 var tainted = window.prompt("What do you think of this?");
+tainted += document.location.search;
 
 // XSS
 document.body.innerHTML = tainted;
