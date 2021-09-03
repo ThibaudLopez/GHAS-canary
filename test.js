@@ -9,3 +9,5 @@ var token = "LoremIpsumDolorSitAmetConsectetur_012345";
 
 // path traversal, IDOR, etc.
 (await (await fetch(`http://example.net/?key=${token}&q=${tainted}`)).text());
+
+// foo
