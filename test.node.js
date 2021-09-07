@@ -7,13 +7,15 @@ const requestListener = function (req, res) {
 const server = http.createServer(requestListener);
 server.listen(8080);
 
+var tainted = req.url + process.argv[2];
+
 // 2
-console.log(process.argv[2]);
+console.log(tainted);
 
 // 3
 const { exec } = require("child_process");
-exec(process.argv[2]);
+exec(tainted);
 
 // 4
 fs = require('fs');
-fs.readFileSync(process.argv[2]);
+fs.readFileSync(tainted);
