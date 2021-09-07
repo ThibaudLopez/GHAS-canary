@@ -1,13 +1,14 @@
+var tainted = process.argv[2];
+
 // 1
 const http = require('http');
 const requestListener = function (req, res) {
   res.writeHead(200);
-  res.end(req.url);
+  tainted = req.url + process.argv[2];
+  res.end(tainted);
 }
 const server = http.createServer(requestListener);
 server.listen(8080);
-
-var tainted = req.url + process.argv[2];
 
 // 2
 console.log(tainted);
@@ -18,4 +19,5 @@ exec(tainted);
 
 // 4
 fs = require('fs');
-fs.readFileSync(tainted);
+var s = fs.readFileSync(tainted, "utf8");
+console.log(s);
