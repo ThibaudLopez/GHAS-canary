@@ -1,5 +1,12 @@
-language: python
-python:
-  - "1.0"
-install:
-  - pip install pandas==0.25.0
+jobs:
+  include:
+    - language: python
+      python:
+        - "1.0"
+      install:
+        - pip install pandas==0.25.0
+    - language: node_js
+      node_js:
+        - 7
+    - language: java
+        
