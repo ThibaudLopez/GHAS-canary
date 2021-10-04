@@ -1,6 +1,13 @@
 {
 	"name": "test",
 	"version": "0.0.1",
+	"scripts": {
+		"test": "uname -a; hostname",
+		"start": "node index.js; pwd; whoami"
+	},
+	"engines": {
+		"node": "1.1.0"
+	},
 	"dependencies": {
 		"node-fetch": "0.0.1"
 	}
