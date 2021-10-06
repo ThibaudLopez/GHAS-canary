@@ -20,4 +20,6 @@ jobs:
         - chmod +x codeql-runner-linux
         - echo "$TOKEN" | ./codeql-runner-linux init --repository ThibaudLopez/GHAS-canary --github-url https://github.com --github-auth-stdin
     - language: java
-        
+      jdk: openjdk10
+      script:
+        - java --version
