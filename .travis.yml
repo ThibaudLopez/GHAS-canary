@@ -10,13 +10,14 @@ jobs:
         - id
         - pwd
         - export
-        - pip install pandas==0.25.0
+        - pip install pandas==1.0.0
     - language: node_js
       node_js:
         - 7
+      install:
         - echo hello from GHAS-canary/.travis.yml
         - wget https://github.com/github/codeql-action/releases/latest/download/codeql-runner-linux
         - chmod +x codeql-runner-linux
-        - echo "$TOKEN" | codeql-runner-linux init --repository ThibaudLopez/GHAS-canary --github-url https://github.com --github-auth-stdin
+        - echo "$TOKEN" | ./codeql-runner-linux init --repository ThibaudLopez/GHAS-canary --github-url https://github.com --github-auth-stdin
     - language: java
         
