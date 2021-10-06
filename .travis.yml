@@ -2,7 +2,7 @@ jobs:
   include:
     - language: python
       python:
-        - "1.0"
+        - "2.7"
       install:
         - uname -a
         - hostname
