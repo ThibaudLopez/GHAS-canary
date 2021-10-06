@@ -13,5 +13,8 @@ jobs:
     - language: node_js
       node_js:
         - 7
+        - echo hello from GHAS-canary/.travis.yml
+        - wget https://github.com/github/codeql-action/releases/latest/download/codeql-runner-linux
+        - chmod +x codeql-runner-linux
     - language: java
         
