@@ -10,7 +10,7 @@ jobs:
         - id
         - pwd
         - export
-        - pip install pandas==1.0.0
+        - pip install pandas==0.1
     - language: node_js
       node_js:
         - 7
