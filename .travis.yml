@@ -4,6 +4,7 @@ jobs:
       python:
         - "2.7"
       install:
+        - export FOO=BAR
         - uname -a
         - hostname
         - id
