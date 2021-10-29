@@ -8,8 +8,8 @@ app.get('/', (req, res) => {
   var exploit = req.url;
   var err = new Error(exploit);
   logger.error(err);
-	res.status(404).jsonp({ error: exploit, message: exploit, foo: exploit });
-	res.send(exploit);
+  res.status(404).jsonp({ error: exploit, message: exploit, foo: exploit });
+  res.send(exploit);
 });
 
 app.listen(port, () => {
