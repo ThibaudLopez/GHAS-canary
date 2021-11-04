@@ -10,3 +10,5 @@ var x = (a: string, b: string): function =>
       </span>
     );
 };
+function f(a: string) {
+};
